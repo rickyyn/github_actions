@@ -1,1 +1,9 @@
+name: Meu Workflow        # Nível 0
+on: [push]                # Nível 0
 
+jobs:                     # Nível 0
+  build:                  # Nível 1 (2 espaços)
+    runs-on: ubuntu-latest # Nível 2 (4 espaços)
+    steps:                # Nível 2 (4 espaços)
+      - name: Checkout    # Nível 3 (6 espaços - o hífen conta!)
+        uses: actions/checkout@v4
